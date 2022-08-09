@@ -6,22 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .button-active {
+          background-image: linear-gradient(#009477, #009477),
+            linear-gradient(#000000, #000000);
+          background-blend-mode: normal, normal;
+          border-radius: 0.417vw;
+          color: white;
+        }
+        html {
+          font-family: AlibabaPuHuiTi-Medium, system-ui, sans-serif;
+        }
+      }
+    </style>
+    <title>英凰国际</title>
   </head>
   <body>
-    <header class="fixed w-full z-10">
+    <header class="fixed w-full z-50">
       <div class="flex items-center h-[5.357vw] justify-between">
-        <img src="/images/1.首页/LOGO.png" class="ml-[20.238vw] w-[13.115vw]" />
+        <a href="#home">
+          <img
+            src="/images/1.首页/LOGO.png"
+            class="ml-[20.238vw] w-[13.115vw]"
+          />
+          <img
+            src="/images/0.通用/LOGO.png"
+            class="ml-[20.238vw] w-[13.115vw] hidden"
+          />
+        </a>
         <ul class="text-[#cccccc] flex mr-[22rem] text-[1vw]">
-          <li class="mr-[3vw]">企业⽂化</li>
-          <li class="mr-[3vw]">关于我们</li>
-          <li class="mr-[3vw]">公司福利</li>
-          <li>招聘岗位</li>
+          <li>
+            <a
+              href="#culture"
+              class="inline-block w-[7.202vw] leading-[2.44vw] text-center"
+              >企业⽂化</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="inline-block w-[7.202vw] leading-[2.44vw] text-center"
+              >关于我们</a
+            >
+          </li>
+          <li>
+            <a
+              href="#dormitory"
+              class="inline-block w-[7.202vw] leading-[2.44vw] text-center"
+              >公司福利</a
+            >
+          </li>
+          <li>
+            <a
+              href="#hire"
+              class="inline-block w-[7.202vw] leading-[2.44vw] text-center"
+              >招聘岗位</a
+            >
+          </li>
         </ul>
       </div>
     </header>
     <!-- 英凰国际 -->
-    <div class="relative">
+    <div class="relative" id="home">
       <img src="/images/1.首页/BG.jpg" alt="" class="w-full" />
       <section
         class="absolute text-white z-10 inline-block w-[29vw] bottom-[12.831vw] left-[20.238vw]"
@@ -42,7 +89,7 @@
       />
     </div>
     <!-- 企业文化 -->
-    <div class="relative">
+    <div class="relative" id="culture">
       <img src="images/2.企业文化/BG.jpg" alt="" class="w-full" />
       <img
         src="/images/2.企业文化/PIC.jpg"
@@ -66,6 +113,7 @@
     <!-- 办公大楼 -->
     <div
       class="relative h-[50.595vw] bg-[url('/images/3.关于我们/重复背景.png')]"
+      id="about"
     >
       <section
         class="absolute text-[#666666] z-10 inline-block w-[31vw] bottom-[12.831vw] left-[20.238vw]"
@@ -82,6 +130,11 @@
         <p class="text-[1.369vw] text-[#999999]">
           治安安全，出⾏⽅便，附近有⼤型的超市等。
         </p>
+        <img
+          src="images/3.关于我们/PAGCOR牌照.png"
+          alt=""
+          class="mt-[3.214vw]"
+        />
       </section>
       <img
         src="/images/3.关于我们/PIC.png"
@@ -89,7 +142,7 @@
         class="absolute h-[42vw] right-[5.833vw] top-0"
       />
     </div>
-    <div class="text-white relative">
+    <div class="text-white relative" id="dormitory">
       <img src="images/4.公司福利/BG.jpg" alt="" class="w-full" />
       <section class="absolute top-0 bottom-0 w-full z-10 flex">
         <div class="flex-1">
@@ -122,7 +175,8 @@
         </div>
       </section>
     </div>
-    <div class="bg-[url('/images/3.关于我们/重复背景.png')]">
+    <!-- 招聘岗位 -->
+    <div class="bg-[url('/images/3.关于我们/重复背景.png')]" id="hire">
       <img src="images/5.招聘岗位/PIC.jpg" alt="" class="w-full" />
       <section
         class="text-[#666666] z-10 inline-block ml-[20.238vw] py-[3vw] flex justify-between w-[60vw]"
@@ -133,7 +187,7 @@
         </div>
         <div class="w-[24.3vw] flex flex-wrap justify-between">
           <button
-            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px] button-active"
           >
             1.技术总监
           </button>
@@ -201,10 +255,74 @@
       Copyright © 2022 YING HUANG International Inc. All Rights Reserved.
       英凰国际 版权所有
     </footer>
-    <div class="backToTop"></div>
+    <img
+      id="goTop"
+      src="images/0.通用/GOTOP.png"
+      alt=""
+      class="fixed right-0 bottom-[5vw] z-50"
+    />
     <script>
       $(function () {
-        console.log(123);
+        var data = {};
+
+        $("#goTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+
+        $(document).scroll(function () {
+          var scroH = $(document).scrollTop(); //滚动高度
+          var viewH = $(window).height(); //可见高度
+          var contentH = $(document).height(); //内容高度
+
+          var culturePosition = $("#culture").position().top;
+          var aboutPosition = $("#about").position().top;
+          var dormitoryPosition = $("#dormitory").position().top;
+          var hirePosition = $("#hire").position().top;
+
+          if (scroH > 100) {
+            //距离顶部大于100px时
+            $("header").addClass("bg-white");
+            $("header a:eq(0) img:eq(0)").addClass("hidden");
+            $("header a:eq(0) img:eq(1)").removeClass("hidden");
+          }
+
+          if (scroH <= 100) {
+            //距离顶部大于100px时
+            $("header").removeClass("bg-white");
+            $("header ul li:eq(0) a").removeClass("button-active");
+            $("header a:eq(0) img:eq(0)").removeClass("hidden");
+            $("header a:eq(0) img:eq(1)").addClass("hidden");
+          }
+
+          if (scroH + 10 >= culturePosition && scroH < aboutPosition) {
+            $("header ul li:eq(0) a").addClass("button-active");
+            $("header ul li:eq(1) a").removeClass("button-active");
+            $("header ul li:eq(2) a").removeClass("button-active");
+            $("header ul li:eq(3) a").removeClass("button-active");
+          }
+
+          if (scroH + 10 >= aboutPosition && scroH < dormitoryPosition) {
+            $("header ul li:eq(0) a").removeClass("button-active");
+            $("header ul li:eq(1) a").addClass("button-active");
+            $("header ul li:eq(2) a").removeClass("button-active");
+            $("header ul li:eq(3) a").removeClass("button-active");
+          }
+
+          if (scroH + 10 >= dormitoryPosition && scroH < hirePosition) {
+            $("header ul li:eq(0) a").removeClass("button-active");
+            $("header ul li:eq(1) a").removeClass("button-active");
+            $("header ul li:eq(2) a").addClass("button-active");
+            $("header ul li:eq(3) a").removeClass("button-active");
+          }
+
+          if (scroH + 10 >= hirePosition) {
+            $("header ul li:eq(0) a").removeClass("button-active");
+            $("header ul li:eq(1) a").removeClass("button-active");
+            $("header ul li:eq(2) a").removeClass("button-active");
+            $("header ul li:eq(3) a").addClass("button-active");
+          }
+        });
       });
     </script>
   </body>
