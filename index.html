@@ -1,12 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="fixed w-full z-10">
+      <div class="flex items-center h-[5.357vw] justify-between">
+        <img src="/images/1.首页/LOGO.png" class="ml-[20.238vw] w-[13.115vw]" />
+        <ul class="text-[#cccccc] flex mr-[22rem] text-[1vw]">
+          <li class="mr-[3vw]">企业⽂化</li>
+          <li class="mr-[3vw]">关于我们</li>
+          <li class="mr-[3vw]">公司福利</li>
+          <li>招聘岗位</li>
+        </ul>
+      </div>
+    </header>
+    <!-- 英凰国际 -->
+    <div class="relative">
+      <img src="/images/1.首页/BG.jpg" alt="" class="w-full" />
+      <section
+        class="absolute text-white z-10 inline-block w-[29vw] bottom-[12.831vw] left-[20.238vw]"
+      >
+        <p class="mb-[1.369vw">
+          <span class="text-[3.571vw]">英凰国际</span>
+          <span class="text-[1.905vw] ml-[1vw]">YH International</span>
+        </p>
+        <p class="text-[1.369vw]">总部座落在菲律宾⻢尼拉Pasay经济区</p>
+        <p class="text-[1.369vw]">是⼀家专注于线上服务公司有合法经营牌照</p>
+        <p class="text-[1.369vw]">⼈性化管理晋升空间⼤培育各国优秀⼈才</p>
+        <p class="text-[1.369vw]">⽬前持续不断扩张及产业升级创新</p>
+      </section>
+      <img
+        src="/images/1.首页/pagcor.png"
+        alt=""
+        class="absolute bottom-[1.19vw] left-[20.238vw] w-[14.226vw]"
+      />
+    </div>
+    <!-- 企业文化 -->
+    <div class="relative">
+      <img src="images/2.企业文化/BG.jpg" alt="" class="w-full" />
+      <img
+        src="/images/2.企业文化/PIC.jpg"
+        alt=""
+        class="absolute h-[50vw] bottom-0"
+      />
+      <section
+        class="absolute text-[#666666] z-10 inline-block w-[31vw] bottom-[12.831vw] right-[21.25vw]"
+      >
+        <p class="mb-[1.369vw">
+          <span class="text-[3.571vw]">企业文化</span>
+          <span class="text-[1.905vw] ml-[1vw]">Enterprise Culture</span>
+        </p>
+        <p class="text-[1.369vw]">集团秉持着以⼈为本的理念发展⾄今</p>
+        <p class="text-[1.369vw]">已有五年的历史</p>
+        <p class="text-[1.369vw]">⾄今于台北菲律宾迪拜</p>
+        <p class="text-[1.369vw]">规模超过500⼈的成熟团队</p>
+        <p class="text-[1.369vw]">在⾏业内⼤幅领先稳定成⻓</p>
+      </section>
+    </div>
+    <!-- 办公大楼 -->
+    <div
+      class="relative h-[50.595vw] bg-[url('/images/3.关于我们/重复背景.png')]"
+    >
+      <section
+        class="absolute text-[#666666] z-10 inline-block w-[31vw] bottom-[12.831vw] left-[20.238vw]"
+      >
+        <p class="mb-[1.369vw]">
+          <span class="text-[3.571vw]">办公大楼</span>
+          <span class="text-[1.905vw] ml-[1vw]">Office Building</span>
+        </p>
+        <p class="text-[1.786vw] text-[#999999]">公司地址：帕塞市</p>
+        <p class="text-[1.369vw] text-[#999999] mb-[1.369vw]">PASAY CITY</p>
+        <p class="text-[1.369vw] text-[#999999]">
+          公司持有PAGCOR牌照，公司环境优美，
+        </p>
+        <p class="text-[1.369vw] text-[#999999]">
+          治安安全，出⾏⽅便，附近有⼤型的超市等。
+        </p>
+      </section>
+      <img
+        src="/images/3.关于我们/PIC.png"
+        alt=""
+        class="absolute h-[42vw] right-[5.833vw] top-0"
+      />
+    </div>
+    <div class="text-white relative">
+      <img src="images/4.公司福利/BG.jpg" alt="" class="w-full" />
+      <section class="absolute top-0 bottom-0 w-full z-10 flex">
+        <div class="flex-1">
+          <div
+            class="px-[5vw] h-[calc(100%-29.756vw)] flex flex-col justify-center"
+          >
+            <p class="text-[3vw]">公司食堂及专业中国厨师</p>
+            <p class="text-[1.905vw]">Dormitory Environment</p>
+            <p class="text-[#cccccc] text-[1.369vw]">
+              菜⾊丰富，营养均衡，家乡味道，川菜、湘菜、粤菜、闽菜、苏菜、浙菜、徽菜和鲁菜⼋⼤菜系应有尽有，
+              以及丰富的台湾小吃。
+            </p>
+          </div>
+          <div class="bg-black h-[29.762vw]"></div>
+        </div>
+        <div>
+          <div class="bg-black h-[29.762vw]"></div>
+          <div
+            class="px-[5vw] h-[calc(100%-29.756vw)] flex flex-col justify-center"
+          >
+            <p>
+              <span class="text-[3vw]">宿舍环境</span>
+              <span class="text-[1.905vw]">Dormitory Environment</span>
+            </p>
+
+            <p class="text-[#cccccc] text-[1.369vw]">
+              免费⻝宿，环境温馨，酒店式服务，提供泳池健⾝房，专⼈保姆打扫
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="bg-[url('/images/3.关于我们/重复背景.png')]">
+      <img src="images/5.招聘岗位/PIC.jpg" alt="" class="w-full" />
+      <section
+        class="text-[#666666] z-10 inline-block ml-[20.238vw] py-[3vw] flex justify-between w-[60vw]"
+      >
+        <div>
+          <p class="text-[3.571vw]">招聘岗位</p>
+          <p class="text-[1.905vw]">Recruitment Positions</p>
+        </div>
+        <div class="w-[24.3vw] flex flex-wrap justify-between">
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            1.技术总监
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            2.产品经理
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            3.数值策划
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            4.C++⼯程师
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            5.安卓⼯程师
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            6.IOS⼯程师
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            7.SEO推广
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            8.JAVA
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            9.UI设计师
+          </button>
+          <button
+            class="text-[1.488vw] w-[11.905vw] h-[3.274vw] bg-white rounded-[5px] mb-[5px] text-left pl-[20px]"
+          >
+            10.⼈事招聘
+          </button>
+        </div>
+      </section>
+    </div>
+    <footer
+      class="leading-[7.143vw] text-center text-white text-[0.893vw]"
+      style="
+        background-image: linear-gradient(
+            0deg,
+            #00223a 0%,
+            #00485c 46%,
+            #2a9678 100%
+          ),
+          linear-gradient(#ffffff, #ffffff);
+        background-blend-mode: normal, normal;
+      "
+    >
+      Copyright © 2022 YING HUANG International Inc. All Rights Reserved.
+      英凰国际 版权所有
+    </footer>
+    <div class="backToTop"></div>
+    <script>
+      $(function () {
+        console.log(123);
+      });
+    </script>
+  </body>
 </html>
