@@ -34,10 +34,6 @@
           color: white;
         }
 
-        html {
-          font-family: AlibabaPuHuiTi-Medium, system-ui, sans-serif;
-        }
-
         .tw-des-title {
           width: 13.571vw;
           height: 3.274vw;
@@ -65,6 +61,11 @@
             rgba(0, 72, 92, 1) 54%,
             rgba(0, 34, 58, 1) 100%
           );
+        }
+
+        .header-active {
+          background-color: white;
+          box-shadow: 0 0 25px rgb(0 0 0 / 30%);
         }
       }
     </style>
@@ -1908,14 +1909,14 @@
 
           //距离顶部大于100px时
           if (scroH > 100) {
-            $("header").addClass("tw-bg-white");
+            $("header").addClass("header-active");
             $("header a:eq(0) img:eq(0)").addClass("tw-hidden");
             $("header a:eq(0) img:eq(1)").removeClass("tw-hidden");
           }
 
           //距离顶部大于100px时
           if (scroH <= 100) {
-            $("header").removeClass("tw-bg-white");
+            $("header").removeClass("header-active");
             $("header ul li:eq(0) a").removeClass("tw-button-active");
             $("header a:eq(0) img:eq(0)").removeClass("tw-hidden");
             $("header a:eq(0) img:eq(1)").addClass("tw-hidden");
