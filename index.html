@@ -25,9 +25,11 @@
           border-radius: 0.417vw;
           color: white;
         }
+
         html {
           font-family: AlibabaPuHuiTi-Medium, system-ui, sans-serif;
         }
+
         .tw-des-title {
           width: 13.571vw;
           height: 3.274vw;
@@ -37,24 +39,36 @@
           background-blend-mode: normal, normal;
           border-radius: 0.417vw;
         }
+
+        .tw-des-title-m {
+          width: 33.796vw;
+          height: 8.241vw;
+          background-blend-mode: normal, normal;
+          border-radius: 0.648vw;
+          background-image: url("images/5.招聘岗位/title_bg.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
       }
     </style>
     <title>英凰国际</title>
   </head>
   <body>
     <header class="tw-fixed tw-w-full tw-z-50">
-      <div class="tw-flex tw-items-center tw-h-[5.357vw] tw-justify-between">
+      <div
+        class="tw-hidden lg:tw-flex tw-items-center tw-h-[5.357vw] tw-justify-between"
+      >
         <a href="#home" class="tw-no-underline">
           <img
-            src="/images/1.首页/LOGO.png"
+            src="images/1.首页/LOGO.png"
             class="tw-ml-[20.238vw] tw-w-[13.115vw]"
           />
           <img
-            src="/images/0.通用/LOGO.png"
+            src="images/0.通用/LOGO.png"
             class="tw-ml-[20.238vw] tw-w-[13.115vw] tw-hidden"
           />
         </a>
-        <ul class="tw-text-[#cccccc] tw-flex tw-mr-[22rem] tw-text-[1vw]">
+        <ul class="tw-text-[#cccccc] tw-mr-[22rem] tw-text-[1vw] tw-flex">
           <li>
             <a
               href="#culture"
@@ -87,111 +101,184 @@
       </div>
     </header>
     <!-- 英凰国际 -->
-    <div class="tw-relative" id="home">
-      <img src="/images/1.首页/BG.jpg" alt="" class="tw-w-full" />
+    <div class="tw-relative tw-h-[177.778vw] lg:tw-h-fit" id="home">
+      <div class="tw-absolute tw-pl-[2.5vw] tw-pt-[2.5vw] lg:tw-hidden">
+        <img
+          src="images/1.首页/LOGO.png"
+          class="tw-w-[30.5vw] tw-h-[8.611vw]"
+        />
+      </div>
+      <img
+        src="images/1.首页/BG.jpg"
+        alt=""
+        class="tw-w-full tw-hidden lg:tw-block"
+      />
+      <img src="images/m/1.首页/BG.jpg" alt="" class="tw-w-full lg:tw-hidden" />
       <section
-        class="tw-absolute tw-text-white tw-z-10 tw-inline-block tw-bottom-[12.831vw] tw-left-[20.238vw]"
+        class="tw-absolute tw-text-white tw-z-10 tw-inline-block tw-bottom-[124.352vw] tw-left-[11vw] lg:tw-bottom-[12.831vw] lg:tw-left-[20.238vw]"
       >
         <p class="tw-mb-[1.369vw">
-          <span class="tw-text-[3.571vw]">英凰国际</span>
-          <span class="tw-text-[1.905vw] tw-ml-[1vw]">YH International</span>
+          <span class="tw-text-[8vw] lg:tw-text-[3.571vw]">英凰国际</span>
+          <span class="tw-text-[4.276vw] lg:tw-text-[1.905vw] tw-ml-[1vw]">
+            YH International
+          </span>
         </p>
-        <p class="tw-text-[1.369vw]">总部座落在菲律宾⻢尼拉Pasay经济区</p>
-        <p class="tw-text-[1.369vw]">是⼀家专注于线上服务公司有合法经营牌照</p>
-        <p class="tw-text-[1.369vw]">⼈性化管理晋升空间⼤培育各国优秀⼈才</p>
-        <p class="tw-text-[1.369vw]">⽬前持续不断扩张及产业升级创新</p>
+        <p class="tw-text-[3vw] tw-text-[3.194vw] lg:lg:tw-text-[1.369vw]">
+          总部座落在菲律宾⻢尼拉Pasay经济区
+        </p>
+        <p class="tw-text-[3vw] lg:tw-text-[1.369vw]">
+          是⼀家专注于线上服务公司有合法经营牌照
+        </p>
+        <p class="tw-text-[3vw] lg:tw-text-[1.369vw]">
+          ⼈性化管理晋升空间⼤培育各国优秀⼈才
+        </p>
+        <p class="tw-text-[3vw] lg:tw-text-[1.369vw]">
+          ⽬前持续不断扩张及产业升级创新
+        </p>
       </section>
       <img
-        src="/images/1.首页/pagcor.png"
+        src="images/1.首页/pagcor.png"
         alt=""
-        class="tw-absolute tw-bottom-[1.19vw] tw-left-[20.238vw] tw-w-[14.226vw]"
+        class="tw-absolute tw-bottom-[4.63vw] tw-left-[5.926vw] tw-w-[36.462vw] lg:tw-bottom-[1.19vw] lg:tw-left-[20.238vw] lg:tw-w-[14.226vw]"
       />
     </div>
     <!-- 企业文化 -->
     <div class="tw-relative" id="culture">
-      <img src="images/2.企业文化/BG.jpg" alt="" class="tw-w-full" />
       <img
-        src="/images/2.企业文化/PIC.jpg"
+        src="images/2.企业文化/BG.jpg"
         alt=""
-        class="tw-absolute tw-h-[50vw] tw-bottom-0"
+        class="tw-w-full tw-hidden lg:tw-block"
+      />
+      <img
+        src="images/m/2.企业文化/BG.jpg"
+        alt=""
+        class="tw-w-full lg:tw-hidden"
+      />
+      <img
+        src="images/2.企业文化/PIC.jpg"
+        alt=""
+        class="tw-absolute tw-h-[50vw] tw-bottom-0 tw-hidden lg:tw-block"
+      />
+      <img
+        src="images/m/2.企业文化/PIC.jpg"
+        alt=""
+        class="tw-absolute tw-h-[100vw] tw-top-0 lg:tw-hidden"
       />
       <section
-        class="tw-absolute tw-text-[#666666] tw-z-10 tw-inline-block tw-w-[31vw] tw-bottom-[12.831vw] tw-right-[21.25vw]"
+        class="tw-absolute tw-text-[#666666] tw-z-10 tw-inline-block lg:tw-w-[31vw] tw-bottom-[30.556vw] tw-right-[18.333vw] lg:tw-bottom-[12.831vw] lg:tw-right-[21.25vw]"
       >
-        <p class="tw-mb-[1.369vw">
-          <span class="tw-text-[3.571vw]">企业文化</span>
-          <span class="tw-text-[1.905vw] ml-[1vw]">Enterprise Culture</span>
+        <p class="tw-mb-[1.369vw]">
+          <span class="tw-text-[8.333vw] lg:tw-text-[3.571vw]">企业文化</span>
+          <span
+            class="tw-text-[4.444vw] lg:tw-text-[1.905vw] ml-[3.611vw] lg:ml-[1vw]"
+          >
+            Enterprise Culture
+          </span>
         </p>
-        <p class="tw-text-[1.369vw]">集团秉持着以⼈为本的理念发展⾄今</p>
-        <p class="tw-text-[1.369vw]">已有五年的历史</p>
-        <p class="tw-text-[1.369vw]">⾄今于台北菲律宾迪拜</p>
-        <p class="tw-text-[1.369vw]">规模超过500⼈的成熟团队</p>
-        <p class="tw-text-[1.369vw]">在⾏业内⼤幅领先稳定成⻓</p>
+        <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
+          集团秉持着以⼈为本的理念发展⾄今
+        </p>
+        <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
+          已有五年的历史
+        </p>
+        <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
+          ⾄今于台北菲律宾迪拜
+        </p>
+        <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
+          规模超过500⼈的成熟团队
+        </p>
+        <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
+          在⾏业内⼤幅领先稳定成⻓
+        </p>
       </section>
     </div>
     <!-- 办公大楼 -->
     <div
-      class="tw-relative tw-h-[50.595vw] tw-bg-[url('/images/3.关于我们/重复背景.png')]"
+      class="tw-relative tw-h-[177.778vw] lg:tw-h-[50.595vw] tw-bg-[url('images/3.关于我们/重复背景.png')]"
       id="about"
     >
       <section
-        class="tw-absolute tw-text-[#666666] tw-z-10 tw-inline-block tw-w-[31vw] tw-bottom-[12.831vw] tw-left-[20.238vw]"
+        class="tw-absolute tw-text-[#666666] tw-z-10 tw-inline-block lg:tw-w-[31vw] tw-bottom-[12.831vw] tw-left-[12.87vw] lg:tw-left-[20.238vw]"
       >
         <p class="tw-mb-[1.369vw]">
-          <span class="tw-text-[3.571vw]">办公大楼</span>
-          <span class="tw-text-[1.905vw] tw-ml-[1vw]">Office Building</span>
+          <span class="tw-text-[8.333vw] lg:tw-text-[3.571vw]">办公大楼</span>
+          <span class="tw-text-[4.444vw] tw-ml-[1vw] lg:tw-text-[1.905vw]"
+            >Office Building</span
+          >
         </p>
-        <p class="tw-text-[1.786vw] tw-text-[#999999]">公司地址：帕塞市</p>
-        <p class="tw-text-[1.369vw] tw-text-[#999999] tw-mb-[1.369vw]">
+        <p
+          class="tw-text-[4.146vw] tw-text-[#999999] lg:tw-text-[4.444vw] lg:tw-text-[1.786vw]"
+        >
+          公司地址：帕塞市
+        </p>
+        <p
+          class="tw-text-[3.139vw] tw-text-[#999999] tw-mb-[1.369vw] lg:tw-text-[1.369vw]"
+        >
           PASAY CITY
         </p>
-        <p class="tw-text-[1.369vw] tw-text-[#999999]">
+        <p class="tw-text-[3.139vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
           公司持有PAGCOR牌照，公司环境优美，
         </p>
-        <p class="tw-text-[1.369vw] tw-text-[#999999]">
+        <p class="tw-text-[3.139vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
           治安安全，出⾏⽅便，附近有⼤型的超市等。
         </p>
         <img
           src="images/3.关于我们/PAGCOR牌照.png"
           alt=""
-          class="tw-mt-[3.214vw]"
+          class="tw-w-[26vw] lg:tw-w-[11.131vw] tw-mt-[7.6vw] lg:tw-mt-[3.214vw]"
         />
       </section>
       <img
-        src="/images/3.关于我们/PIC.png"
+        src="images/3.关于我们/PIC.png"
         alt=""
-        class="tw-absolute tw-h-[42vw] tw-right-[5.833vw] tw-top-0"
+        class="tw-absolute tw-h-[90vw] tw-right-[3.333vw] tw-top-[8.148vw] lg:tw-top-0 lg:tw-h-[42vw] lg:tw-right-[5.833vw]"
       />
     </div>
+    <!-- 公司福利 -->
     <div class="tw-text-white tw-relative" id="dormitory">
-      <img src="images/4.公司福利/BG.jpg" alt="" class="tw-w-full" />
+      <img
+        src="images/4.公司福利/BG.jpg"
+        alt=""
+        class="tw-w-full tw-hidden lg:tw-block"
+      />
+      <img
+        src="images/m/4.公司福利/BG.jpg"
+        alt=""
+        class="tw-w-full lg:tw-hidden"
+      />
       <section
-        class="tw-absolute tw-top-0 tw-bottom-0 tw-w-full tw-z-10 tw-flex"
+        class="tw-absolute tw-top-0 tw-bottom-0 tw-w-full tw-z-10 tw-flex tw-flex-col-reverse lg:tw-flex-row"
       >
         <div class="tw-flex-1">
+          <div class="tw-bg-black tw-h-[60vw] lg:tw-hidden"></div>
           <div
-            class="tw-px-[5vw] tw-h-[calc(100%-29.756vw)] tw-flex tw-flex-col tw-justify-center"
+            class="tw-px-[5vw] lg:tw-h-[calc(100%-60vw)] lg:tw-h-[calc(100%-29.756vw)] tw-flex tw-flex-col tw-justify-center tw-pt-[10vw] lg:tw-pt-0"
           >
-            <p class="tw-text-[3vw]">公司食堂及专业中国厨师</p>
-            <p class="tw-text-[1.905vw]">Dormitory Environment</p>
-            <p class="tw-text-[#cccccc] tw-text-[1.369vw]">
+            <p class="tw-text-[7.778vw] lg:tw-text-[3vw]">
+              公司食堂及专业中国厨师
+            </p>
+            <p class="tw-text-[4.167vw] lg:tw-text-[1.905vw]">
+              Dormitory Environment
+            </p>
+            <p class="tw-text-[#cccccc] tw-text-[3.194vw] lg:tw-text-[1.369vw]">
               菜⾊丰富，营养均衡，家乡味道，川菜、湘菜、粤菜、闽菜、苏菜、浙菜、徽菜和鲁菜⼋⼤菜系应有尽有，
               以及丰富的台湾小吃。
             </p>
           </div>
-          <div class="tw-bg-black tw-h-[29.762vw]"></div>
+          <div class="tw-bg-black tw-h-[29.762vw] tw-hidden lg:tw-block"></div>
         </div>
-        <div>
-          <div class="tw-bg-black tw-h-[29.762vw]"></div>
+        <div class="tw-flex-1">
+          <div class="tw-bg-black tw-h-[60vw] lg:tw-h-[29.762vw]"></div>
           <div
-            class="tw-px-[5vw] tw-h-[calc(100%-29.756vw)] tw-flex tw-flex-col tw-justify-center"
+            class="tw-px-[5vw] lg:tw-h-[calc(100%-60vw)] lg:tw-h-[calc(100%-29.756vw)] tw-flex tw-flex-col tw-justify-center tw-pt-[10vw] lg:tw-pt-0"
           >
             <p>
-              <span class="tw-text-[3vw]">宿舍环境</span>
-              <span class="tw-text-[1.905vw]">Dormitory Environment</span>
+              <span class="tw-text-[7.778vw] lg:tw-text-[3vw]">宿舍环境</span>
+              <span class="tw-text-[4.167vw] lg:tw-text-[1.905vw]">
+                Dormitory Environment
+              </span>
             </p>
-
-            <p class="tw-text-[#cccccc] tw-text-[1.369vw]">
+            <p class="tw-text-[#cccccc] tw-text-[3.194vw] lg:tw-text-[1.369vw]">
               免费⻝宿，环境温馨，酒店式服务，提供泳池健⾝房，专⼈保姆打扫
             </p>
           </div>
@@ -199,87 +286,112 @@
       </section>
     </div>
     <!-- 招聘岗位 -->
-    <div class="tw-bg-[url('/images/3.关于我们/重复背景.png')]" id="hire">
-      <img src="images/5.招聘岗位/PIC.jpg" alt="" class="tw-w-full" />
+    <div
+      class="tw-bg-[url('images/3.关于我们/重复背景.png')] tw-h-[177.778vw] lg:tw-h-fit"
+      id="hire"
+    >
+      <img
+        src="images/5.招聘岗位/PIC.jpg"
+        alt=""
+        class="tw-w-full tw-hidden lg:tw-block"
+      />
+      <img
+        src="images/m/5.招聘岗位/PIC.jpg"
+        alt=""
+        class="tw-w-full lg:tw-hidden"
+      />
+
       <section
-        class="tw-text-[#666666] tw-z-10 tw-inline-block tw-ml-[20.238vw] tw-py-[3vw] tw-flex tw-justify-between tw-w-[60vw]"
+        class="tw-text-[#666666] tw-z-10 tw-inline-block tw-ml-[10.648vw] lg:tw-ml-[20.238vw] tw-py-[3vw] lg:tw-flex tw-justify-between tw-w-[78.5vw] lg:tw-w-[60vw]"
       >
         <div>
-          <p class="tw-text-[3.571vw]">招聘岗位</p>
-          <p class="tw-text-[1.905vw]">Recruitment Positions</p>
+          <p class="tw-text-[8.333vw] lg:tw-text-[3.571vw]">招聘岗位</p>
+          <p class="tw-text-[4.444vw] lg:tw-text-[1.905vw]">
+            Recruitment Positions
+          </p>
         </div>
+        <div class="tw-h-[13.98vw] lg:tw-hidden"></div>
         <div
-          class="tw-w-[24.3vw] tw-flex tw-flex-wrap tw-justify-between"
+          class="lg:tw-w-[24.3vw] tw-flex tw-flex-wrap tw-justify-between"
           id="jobs"
         >
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px] tw-button-active"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw] tw-button-active"
             data-toggle="modal"
             data-target="#dialog1"
           >
             1.技术总监
           </button>
           <div class="modal fade" id="dialog1" role="dialog">
-            <div class="modal-dialog tw-w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     技术总监
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>50k - 100k RMB (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           负责指导并监督技术部⻔完成⽇常开发测试等⼯作，规范开发流程。
@@ -290,17 +402,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>擅长java代码</li>
                         <li>具丰富博彩经验</li>
@@ -327,73 +439,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog6"
           >
             6.IOS⼯程师
           </button>
           <div class="modal fade" id="dialog6" role="dialog">
-            <div class="modal-dialog tw-w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     IOS⼯程师
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>30K RMB 起 (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>负责公司移动端IOS客⼾端产品的研发和维护</li>
                         <li>
@@ -412,17 +533,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           iOS应⽤开发经验⼀年以上,丰富的项⽬开发经验;熟练掌握Objective-C/Swift开发，熟悉C、HTML/CSS，以及了解JavaScript、React
@@ -448,73 +569,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog2"
           >
             2.产品经理
           </button>
           <div class="modal fade" id="dialog2" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     产品经理(有棋牌体育开发经验)
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>50k - 100k RMB (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           提供⾼质量且清晰的产品交互原型表达⽅案；挖掘分析⽤⼾或业务部⻔的需求，确⽴最优解决思路；
@@ -537,17 +667,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           产品岗位相关⼯作经验⼀年以上，有项目经验、包网、体育、棋牌相关从业经验者，或⼤型互⽹公司背景者优先考虑；⼤学本科及以上学历，985或211院校毕业者优先考虑；
@@ -572,73 +702,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog7"
           >
             7.SEO推广
           </button>
           <div class="modal fade" id="dialog7" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     SEO推广
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>面议 提成高 (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           负责公司网站推广工作，提高网站的自然排名和流量；
@@ -670,17 +809,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>大专及以上学历，有较好的沟通、表达能力</li>
                         <li>
@@ -706,73 +845,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog3"
           >
             3.数值策划
           </button>
           <div class="modal fade" id="dialog3" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     数值策划(有棋牌体育开发经验)
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>30K起 (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>协助完成数据分析体系的建设；</li>
                         <li>根据部⻔业务需要，开展专题数据分析⼯作；</li>
@@ -794,17 +942,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           ⼀年以上数据分析或数据产品相关经验，第⼀学历为知名本科，211及985⾼校优先熟练使⽤SQL查询（包括但不限于Hive，MySQL，Oracle，熟练使⽤Hive者优先考虑）
@@ -827,73 +975,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog8"
           >
             8.JAVA
           </button>
           <div class="modal fade" id="dialog8" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     JAVA
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>25K-50k RMB (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           掌握面向对象设计开发，熟悉常见设计模式，研究过开源代码优先
@@ -909,17 +1066,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           计算机、软件工程等相关专业大专以上学历，2年以上Java项目开发经验；
@@ -948,73 +1105,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog4"
           >
             4.C++⼯程师
           </button>
           <div class="modal fade" id="dialog4" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     C++⼯程师
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>30K 起 (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           负责游戏务端的架构设计，根据产品需求，实现游戏的通信技术、底层逻辑实现等服务端技术框架
@@ -1037,17 +1203,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           ⼯科本科以上学历，⼀年以上游戏服务器端通信结构开发经验，有良好的编程习惯，精通使⽤C++
@@ -1072,73 +1238,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog9"
           >
             9.UI设计师
           </button>
           <div class="modal fade" id="dialog9" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     UI设计师
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>20-40k RMB</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>美术.平面设计相关专业，专科及以上学历；</li>
                         <li>两年以上平面设计工作经验；</li>
@@ -1158,17 +1333,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>负责公司产品的界面进行设计.编辑.美化等工作；</li>
                         <li>对公司的宣传产品进行美工设计；</li>
@@ -1185,73 +1360,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog5"
           >
             5.安卓⼯程师
           </button>
           <div class="modal fade" id="dialog5" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     安卓⼯程师
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>30K 起 (能⼒优可谈)</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>根据项⽬要求，负责业务开发和护。</li>
                         <li>负责Android项⽬的⽅案设计和探讨。</li>
@@ -1262,17 +1446,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           熟悉kotlin/java/MVVM/模块化，⼀年以上的Android开发⼯作经验。
@@ -1297,73 +1481,82 @@
             </div>
           </div>
           <button
-            class="tw-text-[1.488vw] tw-w-[11.905vw] tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[20px]"
+            class="tw-text-[4.861vw] lg:tw-text-[1.488vw] tw-w-[38.889vw] lg:tw-w-[11.905vw] tw-h-[10.741vw] lg:tw-h-[3.274vw] tw-bg-white tw-rounded-[5px] tw-mb-[5px] tw-text-left tw-pl-[2vw]"
             data-toggle="modal"
             data-target="#dialog10"
           >
             10.⼈事招聘
           </button>
           <div class="modal fade" id="dialog10" role="dialog">
-            <div class="modal-dialog w-[60vw]">
+            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
-                  <img src="images/5.招聘岗位/win_bg.jpg" alt="" />
+                  <img
+                    src="images/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="tw-hidden lg:tw-block"
+                  />
+                  <img
+                    src="images/m/5.招聘岗位/win_bg.jpg"
+                    alt=""
+                    class="lg:tw-hidden"
+                  />
                   <h4
-                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[3vw]"
+                    class="tw-absolute tw-bottom-[1vw] tw-left-[7vw] tw-text-white tw-text-[5.556vw] lg:tw-text-[3vw]"
                   >
                     ⼈事招聘
                   </h4>
                 </div>
-                <div class="modal-body tw-flex tw-px-[7vw]">
+                <div class="modal-body lg:tw-flex tw-px-[7vw]">
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/薪资范围.png"
                           alt="薪资范围"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         薪资范围
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>10 k RMB</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/经验要求.png"
                           alt="经验要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         经验要求
                       </h2>
                       <div
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw]"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw]"
                       >
                         <p>⼀年以上</p>
                       </div>
                     </section>
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/⼯作职责.png"
                           alt="⼯作职责"
-                          class="tw-w-[1.548vw] tw-h-[2.202vw] tw-mr-[1.4vw] tw-ml-[0.35vw]"
+                          class="tw-w-[3.889vw] tw-h-[5.185vw] tw-mr-[4vw] tw-ml-[1.35vw] lg:tw-w-[1.548vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw] lg:tw-ml-[0.35vw]"
                         />
                         ⼯作职责
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           有⼤专以上学历，⼀年以上招聘经验为佳熟悉Excel，word，ppt等办公软件。
@@ -1381,17 +1574,17 @@
                   <div class="tw-flex-1">
                     <section>
                       <h2
-                        class="tw-des-title tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[1.2vw]"
+                        class="tw-des-title-m lg:tw-des-title tw-text-[4.444vw] lg:tw-text-[1.786vw] tw-text-[#009477] tw-leading-[3.274vw] tw-flex tw-items-center tw-pl-[2.685vw] lg:tw-pl-[1.2vw]"
                       >
                         <img
                           src="images/5.招聘岗位/岗位要求.png"
                           alt="岗位要求"
-                          class="tw-w-[2.381vw] tw-h-[2.202vw] tw-mr-[1.4vw]"
+                          class="tw-w-[5.926vw] tw-h-[5.463vw] tw-mr-[3.611vw] lg:tw-w-[2.381vw] lg:tw-h-[2.202vw] lg:tw-mr-[1.4vw]"
                         />
                         岗位要求
                       </h2>
                       <ul
-                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[2vw] tw-text-[#999999] tw-text-[1.19vw] tw-list-decimal"
+                        class="tw-pl-[4.8vw] tw-mt-[0.58vw] tw-mb-[6.2vw] lg:tw-mb-[2vw] tw-text-[#999999] tw-text-[2.963vw] lg:tw-text-[1.19vw] tw-list-decimal"
                       >
                         <li>
                           根据现有编制及业务发展需求，协助上级确定招聘⽬标,并执⾏招聘计划；优化招聘各项流程
@@ -1423,7 +1616,7 @@
       </section>
     </div>
     <footer
-      class="tw-leading-[7.143vw] tw-text-center tw-text-white tw-text-[0.893vw]"
+      class="tw-leading-[16.111vw] lg:tw-leading-[7.143vw] tw-text-center tw-text-white tw-text-[2.222vw] lg:tw-text-[0.893vw]"
       style="
         background-image: linear-gradient(
             0deg,
