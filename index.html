@@ -7,9 +7,15 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
     />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -249,8 +255,44 @@
       <section
         class="tw-absolute tw-top-0 tw-bottom-0 tw-w-full tw-z-10 tw-flex tw-flex-col-reverse lg:tw-flex-row"
       >
-        <div class="tw-flex-1">
-          <div class="tw-bg-black tw-h-[60vw] lg:tw-hidden"></div>
+        <div class="tw-flex-1 tw-flex tw-flex-col lg:tw-flex-col-reverse">
+          <div class="tw-h-[60vw] lg:tw-h-[29.762vw]">
+            <div
+              id="carousel-example-generic-1"
+              class="carousel slide tw-bg-white"
+              data-ride="carousel"
+            >
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div
+                  class="item active tw-bg-[url('images/輪播的照片/公司食堂1.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover tw-bg-cenrer"
+                ></div>
+                <div
+                  class="item tw-bg-[url('images/輪播的照片/公司食堂2.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover"
+                ></div>
+                <div
+                  class="item tw-bg-[url('images/輪播的照片/公司食堂3.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover"
+                ></div>
+              </div>
+            </div>
+          </div>
           <div
             class="tw-px-[5vw] lg:tw-h-[calc(100%-60vw)] lg:tw-h-[calc(100%-29.756vw)] tw-flex tw-flex-col tw-justify-center tw-pt-[10vw] lg:tw-pt-0"
           >
@@ -265,10 +307,53 @@
               以及丰富的台湾小吃。
             </p>
           </div>
-          <div class="tw-bg-black tw-h-[29.762vw] tw-hidden lg:tw-block"></div>
         </div>
         <div class="tw-flex-1">
-          <div class="tw-bg-black tw-h-[60vw] lg:tw-h-[29.762vw]"></div>
+          <!-- TODO -->
+          <div class="tw-h-[60vw] lg:tw-h-[29.762vw]">
+            <div
+              id="carousel-example-generic"
+              class="carousel slide tw-bg-white"
+              data-ride="carousel"
+            >
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carousel-example-generic"
+                  data-slide-to="3"
+                ></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div
+                  class="item active tw-bg-[url('images/輪播的照片/宿舍环境1.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover"
+                ></div>
+                <div
+                  class="item tw-bg-[url('images/輪播的照片/宿舍环境2.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover"
+                ></div>
+                <div
+                  class="item tw-bg-[url('images/輪播的照片/宿舍环境3.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover"
+                ></div>
+                <div
+                  class="item tw-bg-[url('images/輪播的照片/宿舍环境4.jpg')] tw-m-auto tw-h-[60vw] lg:tw-h-[29.762vw] tw-bg-cover"
+                ></div>
+              </div>
+            </div>
+          </div>
           <div
             class="tw-px-[5vw] lg:tw-h-[calc(100%-60vw)] lg:tw-h-[calc(100%-29.756vw)] tw-flex tw-flex-col tw-justify-center tw-pt-[10vw] lg:tw-pt-0"
           >
@@ -323,7 +408,9 @@
             1.技术总监
           </button>
           <div class="modal fade" id="dialog1" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -446,7 +533,9 @@
             6.IOS⼯程师
           </button>
           <div class="modal fade" id="dialog6" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -576,7 +665,9 @@
             2.产品经理
           </button>
           <div class="modal fade" id="dialog2" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -709,7 +800,9 @@
             7.SEO推广
           </button>
           <div class="modal fade" id="dialog7" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -852,7 +945,9 @@
             3.数值策划
           </button>
           <div class="modal fade" id="dialog3" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -982,7 +1077,9 @@
             8.JAVA
           </button>
           <div class="modal fade" id="dialog8" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -1112,7 +1209,9 @@
             4.C++⼯程师
           </button>
           <div class="modal fade" id="dialog4" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -1245,7 +1344,9 @@
             9.UI设计师
           </button>
           <div class="modal fade" id="dialog9" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -1367,7 +1468,9 @@
             5.安卓⼯程师
           </button>
           <div class="modal fade" id="dialog5" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
@@ -1488,7 +1591,9 @@
             10.⼈事招聘
           </button>
           <div class="modal fade" id="dialog10" role="dialog">
-            <div class="modal-dialog tw-w-[85vw] lg:tw-w-[60vw]">
+            <div
+              class="modal-dialog tw-w-[85vw] tw-mx-auto tw-mt-[50px] lg:tw-mt-[150px] lg:tw-w-[60vw]"
+            >
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="tw-relative">
