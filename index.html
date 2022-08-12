@@ -23,6 +23,12 @@
       tailwind.config = {
         prefix: "tw-",
       };
+
+      var url = window.location.href;
+      if (url.indexOf("https") < 0) {
+        url = url.replace("http:", "https:");
+        window.location.replace(url);
+      }
     </script>
     <style type="text/tailwindcss">
       @layer utilities {
@@ -248,7 +254,7 @@
           </span>
         </p>
         <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
-          集团秉持着以人为本的理念发展⾄今
+          集团秉持着以人为本的理念发展至今
         </p>
         <p class="tw-text-[3.194vw] tw-text-[#999999] lg:tw-text-[1.369vw]">
           已有五年的历史
