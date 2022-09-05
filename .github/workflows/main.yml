@@ -12,9 +12,9 @@ jobs:
     - name: Upload ftp
       uses: sebastianpopp/ftp-action@releases/v2
       with:
-        host: ftp://18.166.80.41:21212
-        user: webjimyftp
-        password: webjimyftp@888
+        host: ${{ secrets.FTP_HOST }}
+        user: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
         localDir: "."
         remoteDir: "test"
         options: "--delete --asci"
