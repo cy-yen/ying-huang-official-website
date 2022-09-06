@@ -12,9 +12,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ${{ secrets.FTP_HOST }}
+        server: 18.166.80.41
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
+        port: 21212
         local-dir: "./"
         server-dir: "./test/"
     - name: send default message
