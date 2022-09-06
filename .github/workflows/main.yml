@@ -24,10 +24,6 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-            ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.commits[0].message }}
-            
-            Repository: ${{ github.repository }}
-            
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
-    
+            亲爱的各位领导:
+            小的已经将网页资料部属完毕
+            请移驾到 https://www.xn--x9qy6jot9btfq.com/ 查看结果
