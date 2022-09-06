@@ -17,7 +17,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "."
         remoteDir: "test"
-        options: "--delete --asci"
+        options: "--delete --transfer-all"
     - name: send default message
       uses: appleboy/telegram-action@master
       with:
