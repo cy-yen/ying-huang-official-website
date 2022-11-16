@@ -317,7 +317,7 @@ const hire_list = [
     <li>其他与美术设计相关的工作。</li>`,
   },
   {
-    title: '11.人事招聘',
+    title: '人事招聘',
     modal_title: '人事招聘',
     salary: `<p>10K RMB</p>
     <p>奖金无封顶</p>`,
