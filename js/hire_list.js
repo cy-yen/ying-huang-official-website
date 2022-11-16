@@ -3,7 +3,7 @@ const hire_list = [
     title: '技术总监',
     modal_title: '技术总监',
     salary: '50K - 100K RMB (能力优可谈)',
-    exp: '一年以上',
+    exp: '4年以上',
     responsibility: `<li>
       负责指导并监督技术部门完成日常开发测试等工作，规范开发流程。
     </li>`,
@@ -29,7 +29,7 @@ const hire_list = [
     title: '产品经理',
     modal_title: '产品经理(有棋牌体育开发经验)',
     salary: '50K - 100K RMB (能力优可谈)',
-    exp: '一年以上',
+    exp: '4年以上',
     responsibility: `<li>
     提供高质量且清晰的产品交互原型表达文案，挖掘分析用户或业务部门的需求，确立最优解决思路。
   </li>
@@ -65,7 +65,7 @@ const hire_list = [
     title: '数值策划',
     modal_title: '数值策划(有棋牌体育开发经验)',
     salary: '30K起 (能力优可谈)',
-    exp: '一年以上',
+    exp: '4年以上',
     responsibility: `<li>协助完成数据分析体系的建设。</li>
     <li>根据部门业务需要，开展专题数据分析工作。</li>
     <li>
@@ -98,7 +98,7 @@ const hire_list = [
     title: 'C++工程师',
     modal_title: 'C++工程师',
     salary: '30K 起 (能力优可谈)',
-    exp: '一年以上',
+    exp: '7年以上',
     responsibility: `<li>
     负责游戏务端的架构设计，根据产品需求，实现游戏的通信技术、底层逻辑实现等服务端技术框架。
   </li>
@@ -134,7 +134,7 @@ const hire_list = [
     title: '安卓工程师',
     modal_title: '安卓工程师',
     salary: '30K 起 (能力优可谈)',
-    exp: '一年以上',
+    exp: '4年以上',
     responsibility: `
     <li>根据项目要求，负责业务开发和维护。</li>
     <li>负责Android项目的方案设计和探讨。</li>
@@ -181,7 +181,7 @@ const hire_list = [
     title: 'IOS工程师',
     modal_title: 'IOS工程师',
     salary: '30K RMB 起 (能力优可谈)',
-    exp: '一年以上',
+    exp: '4年以上',
     responsibility: `<li>负责公司移动端IOS客户端产品的研发和维护。</li>
     <li>
       解决移动端IOS各个系统兼容性问题。编写代码实现设计师的交互效果。
